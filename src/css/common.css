@@ -16,3 +16,82 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* countdownTimer CSS */
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.input {
+  margin-right: 20px;
+  width: 310px;
+  padding: 0 10px;
+
+  font-family: inherit;
+  font-size: 16px;
+  border: 1px solid #bcd0e5;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  width: 110px;
+  height: 50px;
+
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+
+  color: #bcd0e5;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+.button:enabled {
+  color: #173a56;
+}
+
+.button:enabled:hover,
+.button:enabled:focus {
+  color: #ffffff;
+  background-color: #02897a;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 20px;
+}
+
+.value {
+  font-size: 42px;
+
+  text-align: center;
+}
