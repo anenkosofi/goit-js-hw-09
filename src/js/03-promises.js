@@ -20,13 +20,9 @@ function createPromise(position, delay) {
 function onFormSubmit(e) {
   e.preventDefault();
 
-  const {
-    elements: { delay, step, amount },
-  } = e.currentTarget;
-
-  delayInput = Number(delay.value);
-  stepInput = Number(step.value);
-  amountInput = Number(amount.value);
+  let delayInput = Number(e.currentTarget.elements.delay.value);
+  const stepInput = Number(e.currentTarget.elements.step.value);
+  const amountInput = Number(e.currentTarget.elements.amount.value);
 
   for (let i = 1; i <= amountInput; i += 1) {
     createPromise(i, delayInput)
